@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('img/1.gif') no-repeat center center fixed;
+            background-size: cover;
+            z-index: -1;
+        }
+        .title {
+            color: #fff;
+            font-size: 4em;
+            text-align: center;
+            margin-top: 20%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            color: #fff;
+            background-color: #f00;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="title">Te Amo</div>
+    <div class="container">
+        <a href="recuerdos.html" class="button">Fotos</a>
+        <a href="carta.html" class="button">Carta</a>
+    </div>
+</body>
+</html>
